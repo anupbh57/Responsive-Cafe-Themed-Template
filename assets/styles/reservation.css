@@ -1,0 +1,131 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+@keyframes fadeout {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+#landingcover{
+    display: table;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/extras/reservation.jpg') center ;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#s-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+.sec-nav li {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.sec-nav li a {
+    color: white;
+    font-weight: 700;
+    letter-spacing: .075rem;
+    margin: auto;
+}
+
+.sec-nav{
+    display: flex;
+    justify-content: right;
+}
+
+.nav {
+    width: 100%;
+}
+
+.sec-nav li a:hover {
+    opacity: .5;
+    text-decoration: none;
+}
+
+
+#input-area {
+    margin: 5rem 0;
+    padding: 1rem;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+.in-fr {
+    margin: 0rem 0;
+}
+
+#input-area input{
+    margin: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.911);
+    border-radius: 30px;
+}
+#sub-control{
+    margin-top: .5rem;
+}
+.t-leb {
+    color:rgb(180, 45, 45);
+    font-weight: 600;
+    margin-right: 10px;
+}
+.submit-btn{
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    letter-spacing: .07rem;
+    font-weight: 500;
+    background-image: radial-gradient( circle 939px at 94.7% 50%,  rgba(0,178,169,1) 0%, rgba(0,106,101,1) 76.9% );
+}
+
+@media screen and (max-width: 768px) {
+
+.sec-nav {
+    flex-direction: column !important;    
+    padding: 0;
+}
+.sec-nav li {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+.sec-nav li:hover {
+    transform: scale(1.02);
+
+}
+.main-nav {
+    margin-top: 1rem;
+    background: rgba(14, 13, 13, 0.931);
+    z-index: 2;
+}
+.sec-nav li {
+    margin: auto;
+    text-align: center;
+}
+.sec-nav a {
+    margin: auto;
+}
+.site-logo, .navbar-toggler {
+    justify-content: center;
+}
+
+.navbar-toggler i {
+    color: white;
+}
+
+#input-area input{
+    margin-bottom: 1rem;
+}
+
+}

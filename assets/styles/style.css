@@ -1,0 +1,236 @@
+body {
+    height: 1000px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+@keyframes fadeout {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+#landingcover{
+    display: table;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/extras/slide.jpg') center ;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.thankyoucover{ /* Thank you Page */
+    height: fit-content;
+}
+#s-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+.sec-nav li {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.sec-nav li a {
+    color: white;
+    font-weight: 700;
+    letter-spacing: .075rem;
+    margin: auto;
+}
+
+.sec-nav{
+    display: flex;
+    justify-content: right;
+}
+
+.nav {
+    width: 100%;
+}
+
+.sec-nav li a:hover {
+    opacity: .5;
+    text-decoration: none;
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    height: 50vh;
+    margin-top: 0vh; /* Half of the height */
+    left: 50%;
+    width: 80vw;
+    margin-left: -40vw; /* Half of the width */
+    border-radius: 5px;
+    padding:10px;
+}
+.book-button {
+    width: 200px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: transparent;
+    color: white;
+    border: solid;
+    border-width: .15rem;
+    padding: .5rem 1rem;
+    margin: 3rem 0rem 2rem 0rem;
+    transition: box-shadow 300ms ease-in, color 300ms ease-in;
+}
+
+.book-button:hover {
+    color: white;
+    background: rgba(182, 179, 180, 0.541);
+    border: solid;
+    border-width: .15rem;
+    border-color: rgba(170, 167, 168, 0.548);
+    box-shadow: 0 0 40px 40px rgba(170, 167, 168, 0.548) inset;
+}
+.ty-btn {
+    margin-bottom: 2rem;
+}
+.ft-b-group {
+    width: 100%;
+    margin-top: 2rem;
+}
+.ft-btn {
+    margin: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.151);
+    border: solid;
+    border-color: rgb(114, 114, 114);
+    font-size: 1.3rem;
+    width: 400px;
+    border-color: rgb(194, 194, 194);
+    color: rgb(194, 194, 194);
+    padding: .5rem;
+    font-weight: 600;
+    letter-spacing: 0.075rem;
+}
+.gallery {
+    margin: 1rem 0;
+}
+.img-fluid {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    z-index: 0;
+}
+.img-fluid:hover {
+    position: relative;
+    transform: scale(1.02);
+    cursor: pointer; 
+    z-index: 0; 
+    filter: blur(2px);
+}
+.row > div {
+      padding: 5px 4px !important;
+      margin-bottom: 5px;
+}
+
+.gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+footer {
+    margin-top: 3rem;
+}
+.footer-logo {
+    height: 50px !important;
+    width: 60px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    display: block;
+}
+.hr-title {
+    text-align: center;
+    color: rgba(53, 52, 52, 0.747);
+    letter-spacing: 0.3rem;
+}
+.hr-days {
+    text-align: center;
+    color: rgba(53, 52, 52, 0.507);
+    font-size: .95rem;
+    margin: 1rem
+}
+.hr-days-title {
+    font-size: 1.2rem;
+    color: rgba(165, 65, 112, 0.849);
+    letter-spacing: .08rem;
+}
+.hr-days-sub {
+    color: rgba(165, 65, 112, 0.849);
+    letter-spacing: .09rem;
+}
+.footer-sub {
+    margin-top: 3rem;
+}
+.icon-group {
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.icon-group i {
+    margin: 0 30px;
+    font-size: 1.5rem;
+    color: rgba(153, 4, 4, 0.651);
+}
+.ft-col {
+    border-right: solid;
+    border-width: 2px;
+    border-color: rgba(165, 65, 112, 0.849);
+}
+.bottom-footer {
+    color: white;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+#landingcover{
+    display: table;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/extras/slide.jpg') center ;
+
+}
+
+.sec-nav {
+    flex-direction: column !important;    
+    padding: 0;
+}
+.sec-nav li {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+.sec-nav li:hover {
+    transform: scale(1.02);
+
+}
+.main-nav {
+    margin-top: 1rem;
+    background: rgba(14, 13, 13, 0.931);
+    z-index: 2;
+}
+.sec-nav li {
+    margin: auto;
+    text-align: center;
+}
+.sec-nav a {
+    margin: auto;
+}
+.site-logo, .navbar-toggler {
+    justify-content: center;
+}
+
+.navbar-toggler i {
+    color: white;
+}
+
+}
+
+@media screen and (max-width: 340px) {
+ .ft-btn {
+     font-size: .8rem;
+ }
+}
